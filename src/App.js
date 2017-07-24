@@ -128,7 +128,6 @@ class Content extends React.Component {
             <input type="text" value={this.state.couponInput} onChange={evt => this.onChangeCouponInput(evt)} />
             <button onClick={this.updateCouponList}>Add</button>
             <p className="invalid">{this.state.invalidCoupon}</p>
-            {/* for (var i=0; i < 5; i++) { */}
 
             <h3>Used Coupons</h3>   
             {this.state.couponUsedList.map((item, index) => (
@@ -146,10 +145,6 @@ class Content extends React.Component {
           </div>
         );
     }
-}
-
-Content.defaultProps = {
-  couponUsedList: [1,2,3],
 }
 
 export default App;
