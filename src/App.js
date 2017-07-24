@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
 class App extends Component {
   render() {
     return (
@@ -18,7 +19,7 @@ class Header extends React.Component {
    render() {
       return (
           <div className="App-header">
-            <h2>Hurry Code Buffet</h2>
+            <h2>Hasty Code Buffet</h2>
             <p className="detailHeader">All you can code.</p>
           </div>
       );
@@ -119,17 +120,17 @@ class Content extends React.Component {
     render() {
         return (
           <div className="container">
-            <label>Number of customer</label>
+            <label>Number of customer : </label>
             <input type="number" value={this.state.numOfCus} onChange={evt => this.onChangeNumOfCusInput(evt)} />
 
-            <br />
+            <br /><br />
 
-            <label>Coupon Code</label>
+            <label>Coupon Code : </label>
             <input type="text" value={this.state.couponInput} onChange={evt => this.onChangeCouponInput(evt)} />
             <button onClick={this.updateCouponList}>Add</button>
             <p className="invalid">{this.state.invalidCoupon}</p>
 
-            <h3>Used Coupons</h3>   
+            <h3>Used Coupons List</h3>   
             {this.state.couponUsedList.map((item, index) => (
                <p className='indent' key={index}>- {item}</p>
             ))}
