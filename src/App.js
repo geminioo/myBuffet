@@ -50,7 +50,7 @@ class Content extends React.Component {
         var _couponList = this.state.couponUsedList
         var _numOfCus = this.state.numOfCus
         var _basicPrice = _numOfCus*_pricePerPerson
-        var _remainPerson = 0
+        var _remainPerson = _numOfCus
         if(_numOfCus*_pricePerPerson > 6000){
             _basicPrice = _basicPrice*0.75
         }
