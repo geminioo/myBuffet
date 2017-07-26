@@ -1,4 +1,4 @@
-Assignment calucate buffet price using React.
+Assignment calculate buffet price using React.
 
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
